@@ -7,4 +7,3 @@ bill_with_tip= total_bill+ tip / 100 * total_bill
 
 bill_per_person = bill_with_tip/number_of_people
 print(f"each person should pay R {round(bill_per_person,2)}")
-
