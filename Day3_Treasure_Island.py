@@ -34,7 +34,7 @@ elif direction == "left":
     if action == "swim":
         print("You were attacked by a trout. Game over!😖")
     elif action == "wait":
-        print("Three magical doors appeared.\nWhich one will you enter? Red, Blue or Yellow?")
+        print("Three magical doors appeared.\nWhich one will you enter?")
              
         door = str.lower(input("Pick a door. Blue or Red or Yellow?"))
         if door == "yellow":
