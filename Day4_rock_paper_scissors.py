@@ -2,48 +2,51 @@ import random
 
 print("Let's play rock, paper, scissors!")
 
-list = ["rock", "paper", "scissors"]
-
-rock = print("""---'   ____)
+rock =("""---)
       (_____)
       (_____)
       (____)
----.__(___)""")
-
-
-paper = print("""---'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
+---.__(___)
 """)
 
-scissors = print("""---'   ____)____
-          ______)
-       __________)
-      (____)
+
+paper =(""" ---'____)
+             ______)
+            _______)
+         _  ______)
+---.__________)
+
+""")
+
+scissors =("""--____)
+                   ______)
+          _______________)
+      (____ )
 ---.__(___)""")
 
-computer = random.choice(list)
-choice= input("What are you choosing?")
+game_images = [rock, paper, scissors]
 
-if choice == "rock" and computer== "paper":
-    print(f"your choice {choice}")
-    print(f"computer chose {computer}")
+list = [0, 1, 2]
+
+choice= int(input("What are you choosing? Rock= 0, Paper = 1, Scissors = 2:"))
+
+computer = random.randint(0,2)
+print(computer)
+print(f"computer chose {game_images[computer]}")
+
+
+    
+if choice == 0 and computer == 2:
+    print(f"your choice {game_images[choice]}")
+    print("you win!")
+elif choice == 2 and computer == 1:
+    print(f"your choice {game_images[choice]}")
+    print("you win!")
+elif computer > choice:
+    print(f"your choice {game_images[choice]}")
     print("you lose!")
-elif choice == "paper" and computer == "scissors":
-    print(f"your choice: {choice}")
-    print(f"computer chose {computer}")
-    print("you lose!")
-elif choice == "scissor" and computer == "rock":
-    print(f"your choice {choice}")
-    print(f"computer chose {computer}")
-    print("you lose!")
-elif choice== computer:
-    print(f"your choice {choice}")
-    print(f"computer chose {computer}")
+elif choice == computer:
+    print(f"your choice {game_images[choice]}")
     print("Draw!")
 else:
-    print(f"your choice {choice}")
-    print(f"computer chose {computer}")
-    print("You win")
+    print("You entered an invalid number. You lose!")
