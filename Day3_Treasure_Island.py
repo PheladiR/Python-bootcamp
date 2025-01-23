@@ -24,19 +24,19 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to the treasure island!\nYour mission is to find the treasure.")
 
 
-direction = str.lower(input("Do you want to go left or right?"))
+direction = input("Do you want to go left or right?").lower()
 if direction == "right":
     print("You fell into a hole. Game Over!😖")
 elif direction == "left":
     print("You came across a river...")
     
-    action = str.lower(input("Do you want to swim or wait?"))
+    action = input("Do you want to swim or wait?").lower()
     if action == "swim":
         print("You were attacked by a trout. Game over!😖")
     elif action == "wait":
         print("Three magical doors appeared.\nWhich one will you enter?")
              
-        door = str.lower(input("Pick a door. Blue or Red or Yellow?"))
+        door =input("Pick a door. Blue or Red or Yellow?").lower()
         if door == "yellow":
             print("You win!😊")
         elif door == "red":
