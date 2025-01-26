@@ -88,12 +88,12 @@ while not game_over:
     
     if "-" not in  display:
         game_over = True
-        print("You win")
+        print("You have guessed all the letters!You win!")
   
       
     if guess not in correct_letters:
         lives -=1
-        print(f"{lives} lives left")
+        print(f"You guessed the wrong letter!{lives} lives left!")
       
     if lives == 0:
         print(zero)
