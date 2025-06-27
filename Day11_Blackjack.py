@@ -70,8 +70,8 @@ def play_game():
             else:
                 is_game_over = True
 
-    # Computer logic — only runs after user turn
-    computer_score = calculate_score(computer_cards)  # Ensure it's up to date
+
+    computer_score = calculate_score(computer_cards)
     while computer_score != 0 and computer_score < 17:
         computer_cards.append(deal_cards())
         computer_score = calculate_score(computer_cards)
@@ -80,7 +80,7 @@ def play_game():
     print(f"Computer's final hand: {computer_cards}, final score: {computer_score}")
     print(compare(user_score, computer_score))
 
-# Game loop
+
 while input("\nDo you want to play Blackjack? Type 'Y' or 'N': ").upper() == "Y":
     print("\n" + "*" * 20)
     play_game()
