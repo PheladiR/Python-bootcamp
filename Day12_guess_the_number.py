@@ -13,7 +13,7 @@ import random
 
 print(logo)
 print("Welcome to the Number Guessing Game!")
-print("I'm thinking ofanumber between 1 and 100")
+print("I'm thinking of a number between 1 and 100.")
 
 
 """ Choosing game level"""
