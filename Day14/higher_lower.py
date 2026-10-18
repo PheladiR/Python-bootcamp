@@ -40,5 +40,6 @@ while game_should_continue:
         p1 = p2
     else:
         final_score = current_score
+        print(logo)
         print(f"Sorry, that's wrong. Final score: {final_score}")
         game_should_continue = False
