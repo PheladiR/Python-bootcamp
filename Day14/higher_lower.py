@@ -28,6 +28,9 @@ while game_should_continue:
     print(
         f"Compare B: {p2.get('name')}, a {p2.get('description')}, from {p2.get('country')}.")
     guess = input("Who has more followers? A or B?\n").strip().upper()
+    
+    print("\n"*20)
+    print(logo)
 
     if int(p1["follower_count"]) > int(p2["follower_count"]):
         correct = 'A'
